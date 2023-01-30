@@ -1,0 +1,28 @@
+<section id="Footer">
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="currPlay">
+            <h6 id="songname">AMG</h6>
+            <script>
+                function playsong(){
+                    var classname = document.getElementById("play/pause").classList.value;
+                    if(classname==="fa-regular fa-2x fa-circle-play"){
+                        document.getElementById("play/pause").classList.remove("fa-circle-play");
+                        document.getElementById("play/pause").classList.add("fa-circle-pause");
+                    }else{
+                        document.getElementById("play/pause").classList.remove("fa-circle-pause");
+                        document.getElementById("play/pause").classList.add("fa-circle-play");
+                    } 
+                }
+            </script>
+            <div class="icons">
+                <i onclick="backward()" id="back" class="fa-solid fa-2x fa-step-backward"></i>
+                <i onclick="playsong()" id="play/pause" class="fa-regular fa-2x fa-circle-play"></i>
+                <i onclick="forward()" id="forward" class="fa-solid fa-2x fa-step-forward"></i>
+            </div>
+        </div>
+       
+    </div>
+</section>
+</body>
+</html>
