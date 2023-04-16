@@ -168,6 +168,11 @@ i{
 .navbar{
     color: black;
 }
+
+.login{
+    margin-left: auto;
+}
+
 .icons{
     margin-top: 15px;
     width: 80vw;
